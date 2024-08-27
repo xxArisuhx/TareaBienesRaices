@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="AriHT">
+    <meta name="keywords" lang="es" content="html">
+    <meta name="description" lang="es" content="etiquetas basicas de html">
+    <title>Pagina de Contacto</title>
+</head>
+
+<body>
+    <header>
+        <h1> <strong>Bienes Raices</strong></h1>
+        <img src="./img/FACHADA-MODELO-E-1024x576-1.jpg" alt="fachada" height="100%" width="100%">
+        <h2 id="contacto">Contacto</h2>
+    </header>
+    <main>
+       
+        <li id="inicio"><a href="./index.html" target="_blank">Inicio</a></li>
+        <li id="Nosotros"> <a href="#Nosotros">Nosotros</a></li>
+        <li id="Cursos"> <a href="#Cursos">Cursos</a></li>
+        <li id="Blog"> <a href="#Blog">blog</a></li>
+        <li id="contacto"> <a href="#contacto">Contacto</a></li>
+        </ul>
+        </nav> 
+        <h2>Llena el formulario de contacto</h2>
+        <form>
+            <fieldset>
+                <div class="formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50"
+                        placeholder="Tu nombre">
+                </div> <br>
+                <div class="formulario">
+                    <label for="Email">Correo Electronico:</label>
+                    <input type="email" id="email" name="email" required placeholder="tu correo Electronico">
+                </div>
+                <br>
+                <div class="formulario">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{3}-[0-
+            9]{4}-[0-9]{4}" placeholder="506-4444-0000">
+                </div>
+                <div class="formulario">
+                    <label for="Mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" required minlength="10" maxlength="500"
+                        placeholder="Escribe aqui"></textarea>
+                </div> <br>
+                <br>
+                <label for="compra">compra o vende</label>
+                <input id="compra" list="buys">
+                <datalist id="buys">
+                    <option value="compra">
+                    <option value="vende">
+                    </option>
+                </datalist>
+                <br>
+                <br>
+                <label for="numero">Cantidad:</label>
+                <input type="number" id="numero">
+                <br>
+                <h3>Como desea ser contactado</h3>
+                <label for="radio">Telefono</label>
+                <input type="radio" id="radio">
+                <label for="radio">Correo</label>
+                <input type="radio" id="radio">
+                <h4>Si eligio Telefono elija la hora y la fecha</h4>
+                <label for="hora">Hora</label>
+                <input type="time" id="hora">
+                <br>
+                <br>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha">
+                <br>
+                <br>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <br>
+    <footer>
+        <hr size="4" color="black">
+        <h2> <strong>Bienes Raices</strong></h2>
+        <nav>
+            <ul>
+                <li id="inicio"><a href="./index.html" target="_blank">Inicio</a></li>
+                <li id="Nosotros"> <a href="#Nosotros">Nosotros</a></li>
+                <li id="Cursos"> <a href="#Cursos">Cursos</a></li>
+                <li id="Blog"> <a href="#Blog">blog</a></li>
+                <li id="contacto"><a href="./contacto.html" target="_blank">Contactos</a></li>
+        </nav>
+        <p>&copy; 2024 Bienes Raices</p>
+    </footer>
+</body>
+</html>
